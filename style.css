@@ -1,0 +1,68 @@
+/*GENERAL*/
+:root {
+    --color-pink: hsl(322, 100%, 66%);
+    --color-very-pale-cyan: hsl(193, 100%, 96%);
+    --color-very-dark-cyan: hsl(192, 100%, 9%);
+    --color-button-opacity: hsl(192, 100%, 9%, .3);
+    --color-grayish-blue: hsl(208, 11%, 55%);
+    --color-white: hsl(353, 100%, 100%);
+}
+body {
+    font-family: 'Spartan', sans-serif;
+    font-size: 18px;
+    margin:0px;
+}
+
+/*header*/
+.header {
+    background-image: url("./images/bg-hero-mobile.svg");
+    background-color: var(--color-very-pale-cyan);
+}
+.nav {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+button {
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+}
+
+.presentation {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 20px;
+}
+
+.presentation__button{
+    width: 250px;
+    background-color: var(--color-pink);
+    color: var(--color-white);
+}
+.presentation__image{
+    margin: 2rem;
+    width: 300px;
+}
+.presentation__title {
+    text-align:center;
+}
+/*nav*/
+.nav__logo {
+  width: 100px;
+}
+.nav__button {
+    height: 1.5rem;
+    align-items: center;
+    font-size: 10px;
+    color: var(--color-very-dark-cyan);
+    background-color: var(--color-white);
+    box-shadow: 0 0 10px -1px var(--color-button-opacity);
+}
+/*cards*/
+
+/*footer*/
