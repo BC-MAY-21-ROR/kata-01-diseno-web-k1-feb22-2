@@ -1,0 +1,37 @@
+@use 'colors';
+.cards {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 60px;
+  }
+  .card {
+    box-shadow: 0 0 10px -1px colors.$color-button-opacity;
+    width: 310px;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 20px;
+  }
+  .card__title {
+    font-size: 20px;
+  }
+  
+  .card__paragraph {
+    font-size: 15px;
+    color: colors.$color-grayish-blue;
+  }
+  .card__image {
+    margin: 2rem;
+    width: 80%;
+  }
+  .floating-card {
+    background-color: #ffff;
+    transform: translate(0, 100px);
+    z-index: 50;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    max-width: 500px;
+  }
