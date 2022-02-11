@@ -1,0 +1,67 @@
+@use "colors";
+
+.header {
+  background-image: url("./images/bg-hero-mobile.svg");
+  background-color: colors.$color-very-pale-cyan;
+}
+
+/*nav*/
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.nav__logo {
+  width: 8rem;
+}
+
+.nav__button {
+  width: 8rem;
+  font-size: 12px;
+  color: colors.$color-very-dark-cyan;
+  background-color: colors.$color-white;
+  padding: 8px 30px;
+  font-weight: bold;
+}
+
+/* Presentation */
+
+.presentation {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 20px;
+}
+
+.presentation__body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  /* max-width: 500px;*/
+  width: 100%;
+
+  h1,
+  p {
+    color: colors.$color-very-dark-cyan;
+    text-align: center;
+  }
+}
+
+.presentation__button {
+  width: 250px;
+  background-color: colors.$color-pink;
+  color: colors.$color-white;
+  padding: 15px 30px;
+  font-weight: bold;
+}
+
+.presentation__image {
+  margin-top: 50px;
+  width: 80%;
+}
+
+.center__text {
+  text-align: center;
+}

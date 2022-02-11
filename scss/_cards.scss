@@ -1,0 +1,48 @@
+@use "colors";
+
+.cards {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  margin-top: 60px;
+}
+.card {
+  box-shadow: 0 0 10px -1px colors.$color-button-opacity;
+  margin: 20px;
+  padding: 30px;
+  border-radius: 20px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+
+  .card__image {
+    width: 80%;
+    max-width: 450px;
+  }
+
+  .card__title {
+    color: colors.$color-very-dark-cyan;
+    font-size: 20px;
+  }
+
+  .card__paragraph {
+    font-size: 15px;
+    color: colors.$color-grayish-blue;
+  }
+}
+
+.floating-card {
+  background-color: #ffff;
+  transform: translate(0, 100px);
+  z-index: 50;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  max-width: 500px;
+}

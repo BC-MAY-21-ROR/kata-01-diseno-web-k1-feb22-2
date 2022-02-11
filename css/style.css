@@ -1,5 +1,6 @@
 /* Project Colors */
 .cards {
+  font-family: "Open Sans", sans-serif;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-around;
@@ -169,10 +170,11 @@ footer {
 }
 
 .nav__button {
+  width: 8rem;
   font-size: 12px;
   color: #00252e;
   background-color: white;
-  padding: 15px 60px;
+  padding: 8px 30px;
   font-weight: bold;
 }
 
@@ -215,7 +217,6 @@ footer {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   margin: 0px;
@@ -229,6 +230,7 @@ button {
   box-shadow: 0 0 10px -1px rgba(0, 37, 46, 0.3);
   cursor: pointer;
   transition: all 300ms;
+  font-family: "Poppins", sans-serif;
 }
 
 .nav__button:hover {
@@ -254,11 +256,6 @@ a {
 }
 
 /* Modules scss */
-/* General */
-/* Header */
-/* Cards */
-/* Footer */
-/* Mediaqueries */
 @media only screen and (min-width: 1100px) {
   .nav__logo {
     width: 17rem;
@@ -289,7 +286,7 @@ a {
     max-width: 600px;
   }
   .card .card__presentation .card__title {
-    font-size: 25px;
+    font-size: 30px;
   }
   .card .card__presentation .card__paragraph {
     font-size: 18px;
