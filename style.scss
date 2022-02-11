@@ -12,75 +12,112 @@
 /* Footer */
 /* Mediaqueries */
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1100px) {
+  .nav__logo{
+    width: 17rem;
+  }
+  
+  .nav__button{
+    font-size: 20px;
+    padding: 18px;
+    width: 245px;
+  }
     .center__text {
       text-align: left;
     }
+    .margin__left { margin-left: 8rem; }
     .card {
-      width: 80% !important;
+      width: 90%;
       display: flex;
+      flex-flow: row nowrap;
       justify-content: space-between;
-    }
-    .floating-card {
-      width: 60% !important;
-    }
-    .card--1,
-    .card--3 {
-  
       align-items: center;
+      
+      .card__presentation {
+        max-width: 600px;
+        .card__title { font-size: 25px;}
+        .card__paragraph {font-size: 18px;}
+      }
+    }
+    .card__reverse {
       flex-direction: row-reverse;
     }
-  
-    .card--2 {
-      align-items: center;
+
+    .floating-card {
+      width: 60% ;
+      flex-flow: column nowrap;
     }
-    .card__image {
-      width: 30%;
-    }
-    .card__presentation-1,
-    .card__presentation-3 {
-      margin-left: 7rem;
-      width: 40%;
-    }
-    .card__presentation-2 {
-      margin-right: 7rem;
-      width: 40%;
-    }
-  
     .header {
       padding: 20px 50px;
       margin-bottom: 8.5rem;
     }
   .presentation__title{
+      font-size: 60px;
       font-weight: 800;
   }
     .presentation {
+      
       flex-flow: row wrap;
       justify-content: space-between;
   
       .presentation__body {
+        width: 40% !important;
         align-items: start;
-  
         h1,
         p {
           text-align: left;
+        }
+        .presentation__button{
+          margin: 43px 0 0 0;
+          font-size: 20px;
+          padding: 23px;
+          width: 370px;
+        }
+        .presentation__paragraph{
+          margin: 0 0;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 400;
+          font-size: 24.5px;
         }
       }
     }
   
     .presentation__image {
-      width: 60%;
+      width: 50%;
     }
-  
+    footer {
+      padding-left: 8rem;
+      padding-right: 8rem;
+    }
     .footer {
-  
-        .information, .navigation, .social {
-            width: 30%;
+      flex-flow: row wrap;
+      .information, .navigation, .social {
+          width: 30%;
+      }
+      .social {
+        align-self:auto;
+        align-items:start;
+        margin: 0px;
+        justify-content: space-between;
+      }
+
+      .navigation {
+       
+        ul {
+          flex-flow: row wrap;
         }
-  
-        .navigation ul li:nth-child(3){
-            display: inline-block;
+        ul li {
+          flex: 0 0 40%;
         }
+        ul li:nth-child(1){ order: 1; }
+        ul li:nth-child(2){ order: 3; }
+        ul li:nth-child(3){ order: 5; }
+        ul li:nth-child(4){ order: 2; }
+        ul li:nth-child(5){ order: 4; }
+        ul li:nth-child(6){ order: 6; }
+      }
+  
+        
     }
   }
   

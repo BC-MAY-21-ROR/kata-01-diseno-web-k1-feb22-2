@@ -1,37 +1,48 @@
 @use 'colors';
 .cards {
-    position: relative;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: space-around;
+    align-items:center;
     gap: 30px;
     margin-top: 60px;
   }
   .card {
+
     box-shadow: 0 0 10px -1px colors.$color-button-opacity;
-    width: 310px;
     margin: 20px;
     padding: 30px;
     border-radius: 20px;
-  }
-  .card__title {
-    font-size: 20px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items:center;
+    gap: 15px;
+
+    .card__image {
+      width: 80%;
+      max-width: 450px;
+    }
+
+    .card__title {
+      color: colors.$color-very-dark-cyan;
+      font-size: 20px;
+    }
+    
+    .card__paragraph {
+      font-size: 15px;
+      color: colors.$color-grayish-blue;
+    }
   }
   
-  .card__paragraph {
-    font-size: 15px;
-    color: colors.$color-grayish-blue;
-  }
-  .card__image {
-    margin: 2rem;
-    width: 80%;
-  }
+  
   .floating-card {
     background-color: #ffff;
     transform: translate(0, 100px);
     z-index: 50;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     align-items: center;
     max-width: 500px;
   }

@@ -15,12 +15,14 @@
     <link rel="stylesheet" href="style.css" />
     
     <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+ 
     <!-- CDN Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
 
@@ -45,7 +47,7 @@
             so does your audience. Create connections with your users as you
             engage in genuine discussion.
           </p>
-          <button class="presentation__button">Get Started for Free</button>
+          <button class="presentation__button button--hover">Get Started for Free</button>
         </div>
         <img class="presentation__image" src="./images/illustration-mockups.svg" alt="" srcset="">
       </article>
@@ -54,34 +56,33 @@
     </header>
     <main class="cards">
 
-      <div class="card card--1">
+      <div class="card card__reverse">
           <img class="card__image" src="./images/illustration-grow-together.svg" alt="" srcset=""> 
-        <div class="card__presentation-1">
+        <div class="card__presentation margin__left">
           <h1 class="card__title center__text">Grow Together</h1>
           <p class="card__paragraph center__text">Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.</p>
         </div>     
       </div>
 
-      <div class="card card--2">
-        <img class="card__image" src="./images/illustration-flowing-conversation.svg" alt="" srcset="">
-        <div class="card__presentation-2">
+      <div class="card">
+        <img class="card__image margin__left" src="./images/illustration-flowing-conversation.svg" alt="" srcset="">
+        <div class="card__presentation">
           <h1 class="card__title center__text">Flowing conversations</h1>
           <p class="card__paragraph center__text">You wouldn´t paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</p>
         </div>
       </div>
 
-      <div class="card card--3">
-        <img class="card__image" src="./images/illustration-your-users.svg" alt="" srcset="">
-        <div class="card__presentation-3">
+      <div class="card card__reverse">
+        <img class="card__image card__reverse" src="./images/illustration-your-users.svg" alt="" srcset="">
+        <div class="card__presentation margin__left">
           <h1 class="card__title center__text">Your Users</h1>
           <p class="card__paragraph center__text"> It takes no time at all to integrate Huddle with your app´s authentication solution. This means, once signed in to your app, your users can start chatting immediately.</p>
         </div>
-       
       </div>
 
       <div class="card floating-card">
         <h1 class="card__title center__text">Ready To Build Your Community?</h1>
-        <button class="presentation__button">Get Started for Free</button>
+        <button class="presentation__button button--hover">Get Started for Free</button>
       </div>
 
     </main>
@@ -103,12 +104,12 @@
   
         <nav class="navigation">
           <ul>
-            <li><a>About Us</a></li>
-            <li><a>What We Do</a></li>
-            <li><a>FAQ</a></li>
-            <li><a>Career</a></li>
-            <li><a>Blog</a></li>
-            <li><a>Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">What We Do</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
           </ul>
         </nav>
         
@@ -118,8 +119,9 @@
             <a href="#"><i class="fa-brands fa-color fa-instagram"></i></a>
             <a href="#"><i class="fa-brands fa-color fa-twitter"></i></a>
           </div>
-          <h3>©CopyRight 2018 Huddle. All rights reserved</h3>
+          <h3 >©CopyRight 2018 Huddle. All rights reserved</h3>
         </div>
+
       </div>
     </footer>
   </body>
